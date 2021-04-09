@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: local
+    active: test
   datasource:
     url: ${env.JDBC_DATABASE_URL}
     driverClassName: org.postgresql.Driver

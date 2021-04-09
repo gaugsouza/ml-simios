@@ -1,6 +1,5 @@
 package com.ml.simios.domain;
 
-import com.ml.simios.controller.representation.BeingRepresentation;
 import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
 import lombok.Data;
 import org.hibernate.annotations.Type;
@@ -18,6 +17,6 @@ public class Being {
     private Integer id;
     @Type(type = "jsonb")
     @Column(columnDefinition = "jsonb")
-    private BeingRepresentation dna;
+    private Dna dna;
     private Boolean isSimian;
 }
