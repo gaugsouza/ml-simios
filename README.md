@@ -17,4 +17,4 @@ URLs das APIs:
 Para utilizar as APIs basta acessar o link com o método indicado.
 Para a API post, é necessário um body com o seguinte formato: {"dna":[ITEMS DO ARRAY]}
 
-[Code Coverage Displayed in Jacoco](/coverage_jacoco.PNG)
+![Code Coverage Displayed in Jacoco](/coverage_jacoco.PNG)
