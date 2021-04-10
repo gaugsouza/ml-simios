@@ -12,7 +12,7 @@ public class ValidationUtils {
         var dnaSize = dna.size();
 
         if(dnaSize < 4){
-            throw new BadRequestException("O número de itens/linhas deve ser maior ou igual a quatro.");
+            throw new BadRequestException("The number of rows/items has to be greater than four.");
         }
 
         var regex = Pattern.compile("(?!A|T|G|C).");
@@ -22,7 +22,7 @@ public class ValidationUtils {
 
         if(isDnaInvalid) {
             throw new BadRequestException(
-                    "Todos os caractéres devem ser iguais a A, T, G ou C e o número de colunas deve ser igual ao número de linhas.");
+                    "Each char has to be like A,T,G or C and the number of columns and rows has to be the same.");
         }
     }
 }

@@ -16,7 +16,6 @@ import java.util.regex.Pattern;
 @Service
 public class BeingService {
     private final String EMPTY_STRING = "";
-    private ModelMapper modelMapper = new ModelMapper();
 
     @Autowired
     private BeingRepository beingRepository;
@@ -25,7 +24,7 @@ public class BeingService {
         var being = new Being();
 
         being.setIsSimian(isSimian(request.getDna()));
-        being.setDna(modelMapper.map(request.getDna(), Dna.class));
+        being.setDna(String.join(EMPTY_STRING, request.getDna()));
 
         return beingRepository.save(being);
     }
@@ -40,7 +39,7 @@ public class BeingService {
 
         stats.setCountMutantDna(countMutantDna);
         stats.setCountHumanDna(totalBeings - countMutantDna);
-        stats.setRatio((float) countMutantDna / totalBeings);
+        stats.setRatio(totalBeings > 0 ? (float) countMutantDna / totalBeings : 0);
 
         return stats;
     }
