@@ -7,4 +7,5 @@ Para executar a API basta fazer download do código fonte, e configurar apropria
      spring:
       profiles:
        active: test
+
 Após isso, basta rodar o comando: "mvnw clean install spring-boot:run" em qualquer terminal e a aplicação estará disponível para uso.
