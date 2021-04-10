@@ -9,3 +9,7 @@ Para executar a API basta fazer download do código fonte, e configurar apropria
        active: test
 
 Após isso, basta rodar o comando: "mvnw clean install spring-boot:run" em qualquer terminal e a aplicação estará disponível para uso.
+
+URLs das APIs: 
+  - [POST] https://itmlb-simios.herokuapp.com/simian
+  - [GET] https://itmlb-simios.herokuapp.com/stats
