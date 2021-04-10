@@ -24,6 +24,7 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 @ActiveProfiles("test")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 public class SimiosIntegrationTest {
     @Autowired
     private BeingController beingController;
