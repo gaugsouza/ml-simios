@@ -13,3 +13,6 @@ Após isso, basta rodar o comando: "mvnw clean install spring-boot:run" em qualq
 URLs das APIs: 
   - [POST] https://itmlb-simios.herokuapp.com/simian
   - [GET] https://itmlb-simios.herokuapp.com/stats
+
+Para utilizar as APIs basta acessar o link com o método indicado.
+Para a API post, é necessário um body com o seguinte formato: {"dna":[ITEMS DO ARRAY]}
